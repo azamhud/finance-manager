@@ -72,8 +72,14 @@ export default {
         labels: ["", "", "", ""],
         datasets: [
           {
-            label: "Date",
-            data: [0, 0, 0, 0]
+            label: "Debit Daily",
+            data: [0, 0, 0, 0],
+            backgroundColor: "rgba(255, 0, 0, 0.5)"
+          },
+          {
+            label: "Credit Daily",
+            data: [0, 0, 0, 0],
+            backgroundColor: "rgba(0, 0, 255, 0.5)"
           }
         ]
       },
@@ -81,8 +87,14 @@ export default {
         labels: ["", "", "", ""],
         datasets: [
           {
-            label: "Month",
-            data: [0, 0, 0, 0]
+            label: "Debit Monthly",
+            data: [0, 0, 0, 0],
+            backgroundColor: "rgba(255, 0, 0, 0.5)"
+          },
+          {
+            label: "Credit Monthly",
+            data: [0, 0, 0, 0],
+            backgroundColor: "rgba(0, 0, 255, 0.5)"
           }
         ]
       },
@@ -139,35 +151,54 @@ export default {
       this.listTransaction.forEach(element => {
         let dateElement = new Date(element.created_at);
         if (dateElement.getFullYear() === dateNow.getFullYear()) {
-          if (dateElement.getMonth() === dateNow.getMonth() - 3)
+          if (dateElement.getMonth() === dateNow.getMonth() - 3) {
             this.dataChartMonthly.datasets[0].data[3] += element.debit_amount;
-          else if (dateElement.getMonth() === dateNow.getMonth() - 2)
+            this.dataChartMonthly.datasets[1].data[3] += element.credit_amount;
+          } else if (dateElement.getMonth() === dateNow.getMonth() - 2) {
             this.dataChartMonthly.datasets[0].data[2] += element.debit_amount;
-          else if (dateElement.getMonth() === dateNow.getMonth() - 1) {
+            this.dataChartMonthly.datasets[1].data[2] += element.credit_amount;
+          } else if (dateElement.getMonth() === dateNow.getMonth() - 1) {
             this.dataChartMonthly.datasets[0].data[1] += element.debit_amount;
+            this.dataChartMonthly.datasets[1].data[1] += element.credit_amount;
             let tempDate = new Date();
             tempDate.setDate(dateNow.getDate() - 3);
-            if (dateElement.getDate() === tempDate.getDate())
+            if (dateElement.getDate() === tempDate.getDate()) {
               this.dataChartDaily.datasets[0].data[3] += element.debit_amount;
+
+              this.dataChartDaily.datasets[1].data[3] += element.credit_amount;
+            }
 
             tempDate.setDate(dateNow.getDate() - 2);
-            if (dateElement.getDate() === tempDate.getDate())
+            if (dateElement.getDate() === tempDate.getDate()) {
               this.dataChartDaily.datasets[0].data[2] += element.debit_amount;
+              this.dataChartDaily.datasets[1].data[2] += element.credit_amount;
+            }
 
             tempDate.setDate(dateNow.getDate() - 1);
-            if (dateElement.getDate() === tempDate.getDate())
+            if (dateElement.getDate() === tempDate.getDate()) {
               this.dataChartDaily.datasets[0].data[1] += element.debit_amount;
+
+              this.dataChartDaily.datasets[1].data[1] += element.credit_amount;
+            }
           } else if (dateElement.getMonth() === dateNow.getMonth()) {
             this.dataChartMonthly.datasets[0].data[0] += element.debit_amount;
+            this.dataChartMonthly.datasets[1].data[0] += element.credit_amount;
 
-            if (dateElement.getDate() === dateNow.getDate() - 3)
+            if (dateElement.getDate() === dateNow.getDate() - 3) {
               this.dataChartDaily.datasets[0].data[3] += element.debit_amount;
-            else if (dateElement.getDate() === dateNow.getDate() - 2)
+
+              this.dataChartDaily.datasets[1].data[3] += element.credit_amount;
+            } else if (dateElement.getDate() === dateNow.getDate() - 2) {
               this.dataChartDaily.datasets[0].data[2] += element.debit_amount;
-            else if (dateElement.getDate() === dateNow.getDate() - 1)
+
+              this.dataChartDaily.datasets[1].data[2] += element.credit_amount;
+            } else if (dateElement.getDate() === dateNow.getDate() - 1) {
               this.dataChartDaily.datasets[0].data[1] += element.debit_amount;
-            else if (dateElement.getDate() === dateNow.getDate()) {
+
+              this.dataChartDaily.datasets[1].data[1] += element.credit_amount;
+            } else if (dateElement.getDate() === dateNow.getDate()) {
               this.dataChartDaily.datasets[0].data[0] += element.debit_amount;
+              this.dataChartDaily.datasets[1].data[0] += element.credit_amount;
             }
           }
         }
