@@ -1,0 +1,19 @@
+// External
+// @import url("https://fonts.googleapis.com/css?family=Open+Sans:300,400,700,800&display=swap");
+
+@import "./component/variable.scss";
+@import "vue-select/src/scss/vue-select.scss";
+
+// Define your variable overrides here
+@import "~bootstrap/scss/bootstrap.scss";
+@import "~bootstrap-vue/src/index.scss";
+
+@import "./component/typography.scss";
+@import "./component/global.scss";
+@import "./component/svg.scss";
+@import "./component/mainpage.scss";
+@import "./component/table.scss";
+@import "./component/button.scss";
+@import "./component/select.scss";
+@import "./component/pagination.scss";
+

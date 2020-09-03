@@ -1,0 +1,48 @@
+.pagination > li {
+  margin: 0 12px;
+}
+.pagination > li > button.page-link,
+.pagination > li > span.page-link {
+  background-color: #F4F9FD;
+  color: #777777;
+  border: none;
+  height: 30px;
+  width: 30px;
+  display: flex;
+  align-items: center;
+  padding: 0px;
+  justify-content: center;
+}
+
+.pagination > li > button:focus,
+.pagination > li > button:hover,
+.pagination > li > span:focus,
+.pagination > li > span:hover {
+  color: #68b9e9;
+}
+
+.pagination > .active > button {
+  color: white;
+  background-color: #68b9e9 !important;
+  border-radius: 50% !important;
+  border: solid 1px #68b9e9 !important;
+  font-weight: 700;
+}
+
+.pagination > .active > button:hover {
+  border-radius: 50% !important;
+}
+
+.pagination__action {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  svg {
+    height: 15px;
+    width: auto;
+  }
+}
+
+.page-item.disabled .page-link{
+  background-color: #F4F9FD;
+}

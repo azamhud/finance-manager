@@ -1,0 +1,29 @@
+.dropdown .vs__search::placeholder,
+.dropdown .vs__dropdown-toggle,
+.dropdown .vs__dropdown-menu {
+  //   border: 1px solid #cbcbcb;
+  //   color: $color-gray;
+  border-radius: 4px;
+  font-size: 0.8125rem;
+}
+
+.dropdown .vs__search {
+  font-size: 0.8125rem;
+}
+
+.dropdown .vs__selected,
+.dropdown .vs__search {
+  margin: 11px 2px 5px 2px;
+}
+.dropdown .vs__actions {
+  padding: 9px 6px 5px 3px;
+}
+
+.dropdown .vs__clear,
+.dropdown .vs__open-indicator {
+  fill: #394066;
+}
+
+.dropdown-unique .vs__clear{
+  display: none;
+}

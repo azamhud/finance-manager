@@ -1,0 +1,146 @@
+
+.tutorial-svg {
+    .a {
+      fill: #8bbd37;
+      opacity: 0.1;
+    }
+    .b {
+      fill: #fff;
+    }
+    .c {
+      fill: none;
+      stroke: #a5ce5e;
+      stroke-linecap: round;
+      stroke-linejoin: round;
+      stroke-width: 2px;
+    }
+  }
+  
+  .account-svg {
+    .a,
+    .c {
+      fill: #fff;
+      opacity: 0.3;
+    }
+    .a {
+      fill-rule: evenodd;
+    }
+    .b {
+      fill: none;
+      stroke: #fff;
+      stroke-linecap: round;
+      stroke-linejoin: round;
+      stroke-width: 2px;
+    }
+  }
+
+
+  .account-svg-black {
+    .a,
+    .c {
+      fill: #000;
+      opacity: 0.3;
+    }
+    .a {
+      fill-rule: evenodd;
+    }
+    .b {
+      fill: none;
+      stroke: #000;
+      stroke-linecap: round;
+      stroke-linejoin: round;
+      stroke-width: 2px;
+    }
+  }
+  
+  .logo-svg {
+    .a,
+    .b {
+      fill: #fff;
+    }
+    .b,
+    .c {
+      stroke: #4199d5;
+    }
+    .b {
+      stroke-linecap: square;
+      stroke-linejoin: round;
+      stroke-width: 1.573px;
+    }
+    .c,
+    .e {
+      fill: #4199d5;
+    }
+    .c {
+      stroke-width: 0.55px;
+    }
+    .c,
+    .d,
+    .e {
+      fill-rule: evenodd;
+    }
+    .d {
+      fill: #a5ed5e;
+    }
+  }
+  
+  .lock-svg{
+  
+                    .a {
+                      fill: none;
+                      stroke: #fff;
+                      stroke-linecap: round;
+                      stroke-linejoin: round;
+                      stroke-width: 2px;
+                    }
+                    .b,
+                    .c {
+                      fill: #fff;
+                    }
+                    .b {
+                      fill-rule: evenodd;
+                      opacity: 0.3;
+                    }
+  }
+
+  .dashboard-svg{
+
+    .a,
+    .b {
+      fill: #fff;
+    }
+    .a {
+      font-size: 16px;
+      font-family: Lato-Regular, Lato;
+    }
+    .b {
+      fill-rule: evenodd;
+      opacity: 0.3;
+    }
+    .c {
+      fill: none;
+      stroke: #fff;
+      stroke-linecap: round;
+      stroke-linejoin: round;
+    }
+  }
+
+  .finance-svg{
+
+    .a {
+        fill: none;
+        stroke: #fff;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+      }
+      .b {
+        fill: #fff;
+        fill-rule: evenodd;
+        opacity: 0.3;
+      }
+    .c {
+      fill: #fff;
+      font-size: 16px;
+      font-family: Lato-Regular, Lato;
+    }
+  }

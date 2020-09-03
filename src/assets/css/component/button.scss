@@ -1,0 +1,41 @@
+.btn {
+  svg {
+    height: 11px;
+    width: 11px;
+    fill: currentColor;
+  }
+  &-primary {
+    color: $white;
+    &:disabled {
+      color: $white;
+    }
+  }
+  &-outline-primary {
+    color: $color-blue-500;
+    border-color: $color-blue-500;
+    &:hover {
+      color: $white;
+    }
+  }
+  &-outline-secondary {
+    color: $color-gray-300;
+    border-color: $color-gray-300;
+  }
+  &-xxs {
+    font-size: 0.5rem;
+  }
+  &-xs {
+    font-size: 0.6rem;
+  }
+  &-s {
+    font-size: 0.7rem;
+  }
+  &--gray {
+    background-color: $color-gray;
+    color: $white;
+  }
+  &--blue-light {
+    background-color: $color-blue-100;
+    color: $white;
+  }
+}

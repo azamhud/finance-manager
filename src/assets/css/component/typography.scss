@@ -1,0 +1,61 @@
+.text-xxs {
+  font-size: 0.65rem !important;
+}
+.text-xs {
+  font-size: 0.8rem !important;
+}
+.text-s {
+  font-size: 0.87rem !important;
+}
+.text-sm {
+  font-size: 0.95rem !important;
+}
+.text-normal {
+  font-size: 1rem !important;
+}
+.text-md {
+  font-size: 1.15rem !important;
+}
+
+.text-600{
+  font-weight: 600;
+}
+.text-300{
+  font-weight: 300;
+}
+
+.text-blue-gray{
+  color: $color-blue-gray;
+}
+
+.text-blue-gray-300{
+  color: $color-blue-gray-300;
+}
+
+.text-black {
+  color: $black !important;
+}
+
+.text-gray {
+  color: $color-gray;
+}
+
+.text-blue-light {
+  color: $color-blue-100 !important;
+}
+
+.text-blue-darker {
+  color: $color-blue-900 !important;
+}
+
+.text-blue {
+  color: $color-blue-500 !important;
+}
+
+.text-green {
+  color: $color-green !important;
+}
+
+.text-red {
+  color: $color-red-500 !important;
+}

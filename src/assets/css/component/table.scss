@@ -1,0 +1,28 @@
+.table {
+  color: #2A2C2E;
+  width: 100%;
+  border: 1px solid #ececec;
+}
+
+.table__th,
+.table__td {
+  align-items: flex-start;
+  padding: 0.25rem;
+  border-bottom: 1px solid #ececec;
+  font-weight: 400;
+  text-align: left;
+  font-size: 0.8rem;
+}
+
+// .table tbody tr:nth-child(odd){
+//   background-color: #ececec;
+// }
+
+.table__td {
+  padding-bottom: 3rem;
+  font-weight: 300;
+}
+
+.table__tr:last-child .table__td {
+  border-bottom: 0px;
+}

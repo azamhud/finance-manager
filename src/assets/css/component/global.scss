@@ -1,0 +1,28 @@
+input:focus,
+select:focus,
+textarea:focus,
+button:focus {
+    outline: none;
+}
+
+input:-webkit-autofill{
+  &,
+  &:hover,
+  &:focus,
+  &:active{
+    transition-delay: 9999s;
+    transition-property: background-color, color;
+  }
+}
+
+.btn{
+  &-modal{
+    background-color: #A5CE5D;
+    color: white;
+    font-weight: bold;
+  }
+}
+
+.w-90{
+  width: 90%;
+}
